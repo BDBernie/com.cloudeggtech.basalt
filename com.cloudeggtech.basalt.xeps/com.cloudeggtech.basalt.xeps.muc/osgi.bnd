@@ -1,0 +1,35 @@
+#-----------------------------------------------------------------
+# Use this file to add customized Bnd instructions for the bundle
+#-----------------------------------------------------------------
+
+Basalt-Parsers: protocol-chain=presence|null->x|http://jabber.org/protocol/muc;\
+ class=com.cloudeggtech.basalt.xeps.muc.Muc;\
+ type=naming-convention,\
+ protocol-chain=presence|null->x|http://jabber.org/protocol/muc#user;\
+ class=com.cloudeggtech.basalt.xeps.muc.user.MucUser;\
+ type=naming-convention,\
+ protocol-chain=message|null->x|http://jabber.org/protocol/muc#user;\
+ class=com.cloudeggtech.basalt.xeps.muc.user.MucUser;\
+ type=naming-convention,\
+ protocol-chain=iq|null->query|http://jabber.org/protocol/muc#admin;\
+ class=com.cloudeggtech.basalt.xeps.muc.admin.MucAdmin;\
+ type=naming-convention,\
+ protocol-chain=iq|null->query|http://jabber.org/protocol/muc#owner;\
+ class=com.cloudeggtech.basalt.xeps.muc.owner.MucOwner;\
+ type=naming-convention,\
+ protocol-chain=iq|null->query|http://jabber.org/protocol/muc#owner->x|jabber:x:data;\
+ class=com.cloudeggtech.basalt.xeps.xdata.XData;\
+ type=naming-convention,\
+ protocol-chain=message|null->x|jabber:x:conference;\
+ class=com.cloudeggtech.basalt.xeps.muc.xconference.XConference;\
+ type=naming-convention
+Basalt-Translators: class=com.cloudeggtech.basalt.xeps.muc.Muc;\
+ type=naming-convention,\
+ class=com.cloudeggtech.basalt.xeps.muc.user.MucUser;\
+ type=naming-convention,\
+ class=com.cloudeggtech.basalt.xeps.muc.admin.MucAdmin;\
+ type=naming-convention,\
+ class=com.cloudeggtech.basalt.xeps.muc.owner.MucOwner;\
+ type=naming-convention,\
+ class=com.cloudeggtech.basalt.xeps.muc.xconference.XConference;\
+ type=naming-convention

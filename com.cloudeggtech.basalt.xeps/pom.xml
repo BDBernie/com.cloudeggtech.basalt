@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.cloudeggtech.basalt</groupId>
+		<artifactId>com.cloudeggtech.basalt</artifactId>
+		<version>1.1.0.RELEASE</version>
+	</parent>
+
+	<groupId>com.cloudeggtech.basalt</groupId>
+	<artifactId>com.cloudeggtech.basalt.xeps</artifactId>
+	<packaging>pom</packaging>
+	<name>XMPP XEP Protocol Libraries</name>
+
+	<modules>
+		<module>com.cloudeggtech.basalt.xeps.ping</module>
+		<module>com.cloudeggtech.basalt.xeps.disco</module>
+		<module>com.cloudeggtech.basalt.xeps.rsm</module>
+		<module>com.cloudeggtech.basalt.xeps.muc</module>
+		<module>com.cloudeggtech.basalt.xeps.xdata</module>
+		<module>com.cloudeggtech.basalt.xeps.delay</module>
+		<module>com.cloudeggtech.basalt.xeps.address</module>
+		<module>com.cloudeggtech.basalt.xeps.oob</module>
+		<module>com.cloudeggtech.basalt.xeps.ibr</module>
+	</modules>
+
+</project>

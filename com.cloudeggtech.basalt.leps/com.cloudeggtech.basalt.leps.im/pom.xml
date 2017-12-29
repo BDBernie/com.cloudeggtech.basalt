@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+        <groupId>com.cloudeggtech.basalt</groupId>
+        <artifactId>com.cloudeggtech.basalt.leps</artifactId>
+        <version>1.1.0.RELEASE</version>
+    </parent>
+    	
+	<groupId>com.cloudeggtech.basalt.leps</groupId>
+	<artifactId>com.cloudeggtech.basalt.leps.im</artifactId>
+	<name>com.cloudeggtech.basalt.leps.im</name>
+	<packaging>bundle</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.cloudeggtech.basalt</groupId>
+			<artifactId>com.cloudeggtech.basalt.protocol.oxm</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.cloudeggtech.basalt</groupId>
+			<artifactId>com.cloudeggtech.basalt.protocol.im</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
